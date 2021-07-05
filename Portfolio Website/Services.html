@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+
+<body>
+    <div class="links">
+        <div class="left">
+
+            <ul class="icons">
+                <li><a href="index.html"><img src="https://img.icons8.com/ios/50/ffffff/home--v1.png"/></a></li>
+                <li><a href="AboutMe.html"><img src="https://img.icons8.com/ios/50/ffffff/user-male-circle.png"/></a></li>
+                <li><a href="Services.html"><img id="selected" src="https://img.icons8.com/ios/50/ffffff/service.png"/></a></li>
+            </ul>      
+            <section class="show">
+                <ul class="text">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                </ul>
+            </section>
+           
+        </div>
+        <div class="right">
+            <input type="text" value="markodurakov@gmail.com" id="addr"></li>
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/marko.durakov"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/durakovmarko/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a></li>
+                <li class="gmail" ><button  onclick="CopyAddr()" ></button> <p class="popup">Click to copy address</address></p></li>
+            </ul>
+        </div>
+    </div>
+    <div class="services">
+        <div class="card" id="webdev">
+            <h1>Desinging web sites</h1>
+            <img src="./images/webss.png" alt="">
+            <h3>I will make your imagination become reality</h3>
+            <ul>
+                <li> Guaranteed quality </li>
+                <li>Fast delivery</li>
+                <li>Easy communication</li>
+            </ul>
+            <h3 class="order">Order NOW</h3>
+        </div>
+        <div class="card" id="photo">
+            <h1>Editing Photos</h1>
+            <img src="https://i.pinimg.com/originals/c3/f4/75/c3f47515c6cf5e58bd3f8ea4b4e34474.jpg" alt="">
+            <h3>Alter any image to your liking</h3>
+            <h3 class="order">Order NOW</h3>
+        </div>
+        <div class="card" id="coach">
+            <h1>League coaching</h1>
+            <img src="https://i.ytimg.com/vi/Z-Un87NN8ME/maxresdefault.jpg" alt="">
+            <h3>Climb out of any elo</h3>
+            
+            <h3 class="order">Order NOW</h3>
+        </div>
+    </div>
+</body>
+<script>
+function CopyAddr() {
+  var copyAddress = document.getElementById('addr')
+  copyAddress.select();
+  document.execCommand('copy');
+  alert("The e-mail address has been coppied to your clipboard");
+}
+</script>
+</html>
